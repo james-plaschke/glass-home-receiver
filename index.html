@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Glass Home Receiver</title>
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: #000; overflow: hidden; }
+    #msg { color: #888; font-family: -apple-system, sans-serif; font-size: 2vw; text-align: center;
+           position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+  </style>
+</head>
+<body>
+  <div id="msg">Glass Home receiver — placeholder, build in progress</div>
+  <script src="https://www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js"></script>
+  <script>
+    const context = cast.framework.CastReceiverContext.getInstance();
+    context.start();
+  </script>
+</body>
+</html>
